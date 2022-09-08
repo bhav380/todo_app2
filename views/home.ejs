@@ -6,11 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo app</title>
+
+    <script src="https://kit.fontawesome.com/1505e6fedb.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 
 <body>
 
-    <p>hello</p>
+    <h1 id="heading">
+        Todo App
+    </h1>
+    <hr>
+
+    <form action="/add-task" method="POST">
+
+        <div id="flex-box">
+            <div id="flex-item">
+
+
+                <label for="description">Description</label><br>
+                <input type="text" id="description" name="description" placeholder="What do you need to do?" required>
+                <hr>
+                <div id="flex-container">
+                    <div id="category">
+                        <label for="select-category">Category</label><br>
+                        <select id="select-category" name="category">
+                            <option value="personal">Personal</option>
+                            <option value="work">Work</option>
+                            <option value = "school">School</option>
+                            <option value="cleaning">Cleaning</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div id="due-date">
+                        <label for="select-date">Due Date</label><br>
+                        <input id="select-date" type="date" name="date">
+                    </div>
+                </div>
+                <hr>
+
+                <div id="buttons">
+                    <div id="add">
+
+                        <button type="submit">
+                            <i class="fa-duotone fa-plus"></i>
+                            <span>Add Task</span>
+                        </button>
+                    </div>
+
+                    <div id="delete">
+                        <button type="button">
+                            <i class="fa-sharp fa-solid fa-trash"></i>
+                            <span> Delete Task</span>
+                        </button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+        </div>
+    </form>
+
 
 </body>
 

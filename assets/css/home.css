@@ -1,0 +1,95 @@
+body {
+    margin: 0px;
+}
+
+#heading {
+    text-align: center;
+    color: grey;
+}
+
+hr {
+    color: grey
+}
+
+#flex-box {
+    display: flex;
+    justify-content: center;
+}
+
+#flex-item {
+    width: 60%;
+}
+
+#flex-container {
+    display: flex;
+}
+
+label {
+    color: grey;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+#description {
+    color: grey;
+}
+
+#category {
+    color: grey;
+    width: 50%;
+}
+
+#due-date {
+    color: grey;
+    width: 50%
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#add button,
+#delete button {
+    height: 50px;
+    width: 175px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+#add button i {
+    font-size: 2rem;
+    color: white;
+}
+
+#delete button i {
+    font-size: 1.2rem;
+}
+
+#add button {
+    background-color: darkslategray;
+}
+
+#delete button {
+    background-color: red;
+}
+
+#add button:hover {
+    background-color: grey;
+}
+
+#delete button:hover {
+    background-color: orange;
+}
+
+#description {
+    border: none;
+}
+
+#select-category {
+    border: none;
+}
+
+#select-date {
+    border: none;
+}
